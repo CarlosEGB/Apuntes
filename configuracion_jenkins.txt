@@ -1,0 +1,57 @@
+***LINUX PC
+user: pacoperes
+password: 123456789
+
+
+*********************
+
+**ejecutar jenkis 
+docker run --add-host="localhost:192.168.0.147" -p 8080:8080 -p 50000:50000 --name jenkins -d -v C:\Users\Claudia\Pictures\jenkins_home:/var/jenkins_home jenkins/jenkins
+
+**ver container
+docker container ls
+
+**elimanar container
+docker rm -f jenkins
+
+** ver lo que se esta ejecutando
+docker logs -f jenkins
+
+** ejecutar consola de jenkins
+docker exec -it jenkins bash
+
+****comandos docker
+--ver que contenedor estan ejecutados
+docker ps
+
+--ver logs del contenedor
+docker log <id>
+
+-
+
+********************datos Jenkis**********
+User: claudia
+contra: 123456789
+nombre: Claudia Marcela
+email:claudiamarce123@yopmail.com
+
+localhost: http://localhost:8080/
+
+*********CONSOLA JENKIS
+**saber variable de entorno
+echo $JAVA_HOME
+
+******* ejecutar el compose del proyecto
+docker-compose -f docker-compose.yml up -d
+
+**crear nodo de windons con tu windows para jenkis
+https://www.youtube.com/watch?v=N8AQTlHoBKc
+
+
+*** comandos de agente en el node
+jenkins-agents.exe install 
+jenkins-agents.exe uninstall 
+jenkins-agents.exe start 
+jenkins-agents.exe stop 
+
+

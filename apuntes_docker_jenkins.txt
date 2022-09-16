@@ -1,0 +1,15 @@
+***LINUX PC
+user: pacoperes
+password: 123456789
+
+***
+jenkins
+docker run -p 8080:8080 -p 50000:50000 -d -v C:\jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+
+
+****comandos docker
+--ver que contenedor estan ejecutados
+docker ps
+
+--ver logs del contenedor
+docker log <id>
