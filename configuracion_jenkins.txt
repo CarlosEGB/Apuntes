@@ -46,6 +46,7 @@ docker-compose -f docker-compose.yml up -d
 
 **crear nodo de windons con tu windows para jenkis
 https://www.youtube.com/watch?v=N8AQTlHoBKc
+https://github.com/winsw/winsw
 
 
 *** comandos de agente en el node
