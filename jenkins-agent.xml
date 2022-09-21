@@ -1,0 +1,10 @@
+<service>
+  <id>jenkins8080agent</id>
+  <name>Jenkins</name>
+  <description>This service runs Jenkins continuous integration system. 8080</description>
+  <env name="JENKINS_HOME" value="%BASE%" />
+  <executable>C:\tools\jdk-11.0.16\bin\java.exe</executable>
+  <arguments>-Dhudson.model.DirectoryBrowserSupport.CSP="sandbox allow-same-origin allow-scripts; default-src 'self'; script-src * 'unsafe-eval'; img-src *; style-src * 'unsafe-inline'; font-src *" -jar agent.jar -jnlpUrl http://localhost:8080/computer/windows/jenkins-agent.jnlp -secret 691038d80db3c72cb348e704aad16aec740833fc09c155f27bc8c155905e588c -workDir "c:\tools\jenkins-agent" </arguments>
+  <log mode="roll" />
+  <onfailure action="restart" />
+</service>
